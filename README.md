@@ -101,6 +101,16 @@ cmake -DMONERO_DIR=/path/to/monero_folder ..
 
 # compile
 make
+
+# tar dirs
+tar -cvzf xmrblocks.tar.gz ext/ gen/ src/ templates/ xmrblocks
+
+# make dir and untar
+mkdir xmrblocks && cd xmrblocks && mv ../xmrblocks.tar.gz .
+tar -xvzf xmrblocks.tar.gz ext/ gen/ src/ templates/ xmrblocks
+
+# run xmrblocks
+./xmrblocks
 ```
 
 When compilation finishes executable `xmrblocks` should be created. Before running
