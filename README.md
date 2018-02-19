@@ -23,43 +23,6 @@ Monero C++ libraries, but also demonstrates how to use:
  - [json](https://github.com/nlohmann/json) - JSON for Modern C++
  - [fmt](https://github.com/fmtlib/fmt) - Small, safe and fast string formatting library
 
-## Addresses
-
-Tor users:
- 
- - [http://dvwae436pd7nt4bc.onion](http://dvwae436pd7nt4bc.onion) (Front-end templates are [maintained by @suhz](https://github.com/suhz/onion-monero-blockchain-explorer/tree/moneroexplorer.com/src/templates)).
-  
-Clearnet versions:
-
- - [https://oculus.serveo.net/](https://oculus.serveo.net/) - bleeding edge version. 
- - [https://xmrchain.net/](https://xmrchain.net/) - https enabled, most popular and very stable.
- - [https://MoneroExplorer.com/](https://moneroexplorer.com/) - nice looking one, https enabled.
- - [https://monerohash.com/explorer/](https://monerohash.com/explorer/) - nice looking one, https enabled.
- - [http://explore.MoneroWorld.com](http://explore.moneroworld.com) - same as the second one. 
- - [https://moneroexplorer.pro/](https://moneroexplorer.pro/) - nice looking one, https enabled.
- - [https://explorer.monero-otc.com/](https://explorer.monero-otc.com/) - https enabled.
- - [http://monerochain.com/](http://monerochain.com/) - JSON API based, multiple nodes.   
- - [http://atesti.mooo.com:8081/](http://atesti.mooo.com:8081/) - Proof of Existence built with Monero and IPFS. 
--  [https://anunknownamount.com](https://anunknownamount.com/) - looks nice, https enabled.
-  
-Clearnet testnet Monero version:
-
- - [http://nimis.serveo.net/](http://nimis.serveo.net/) - bleeding edge version. 
- - [https://testnet.xmrchain.com/](https://testnet.xmrchain.com/) - https enabled.
- - [https://explorer.monero-otc.com/](https://explorer.monero-otc.com/) - https enabled.
- - [https://testnet.MoneroExplorer.com/](https://testnet.moneroexplorer.com/) - https enabled.
-
-i2p users (main Monero network):
-
- - [http://7o4gezpkye6ekibhgpkg7v626ze4idsirapufzrefkdysa6zxhha.b32.i2p/](http://7o4gezpkye6ekibhgpkg7v626ze4idsirapufzrefkdysa6zxhha.b32.i2p/)
-
-Alternative block explorers:
-
-- [http://moneroblocks.info](http://moneroblocks.info/)
-- [https://monerobase.com](https://monerobase.com/)
-- [http://chainradar.com](http://chainradar.com/xmr/blocks)
-
- 
 ## Onion Monero Blockchain Explorer features
 
 The key features of the Onion Monero Blockchain Explorer are:
@@ -88,7 +51,6 @@ The key features of the Onion Monero Blockchain Explorer are:
 Current development branch, which includes support for sub-addresses is:
 
  - https://github.com/moneroexamples/onion-monero-blockchain-explorer/tree/devel
- 
  
 
 ## Compilation on Ubuntu 16.04
@@ -135,10 +97,7 @@ cd onion-monero-blockchain-explorer
 mkdir build && cd build
 
 # create the makefile
-cmake ..
-
-# altearnatively can use: cmake -DMONERO_DIR=/path/to/monero_folder .. 
-# if monero is not in ~/monero
+cmake -DMONERO_DIR=/path/to/monero_folder .. 
 
 # compile
 make
@@ -791,3 +750,41 @@ finished and may not work as intended.
 
 Constructive criticism, code and website edits are always good. They can be made through github.
 
+
+## Addresses
+
+Tor users:
+ 
+ - [http://dvwae436pd7nt4bc.onion](http://dvwae436pd7nt4bc.onion) (Front-end templates are [maintained by @suhz](https://github.com/suhz/onion-monero-blockchain-explorer/tree/moneroexplorer.com/src/templates)).
+  
+Clearnet versions:
+
+ - [https://oculus.serveo.net/](https://oculus.serveo.net/) - bleeding edge version. 
+ - [https://xmrchain.net/](https://xmrchain.net/) - https enabled, most popular and very stable.
+ - [https://MoneroExplorer.com/](https://moneroexplorer.com/) - nice looking one, https enabled.
+ - [https://monerohash.com/explorer/](https://monerohash.com/explorer/) - nice looking one, https enabled.
+ - [http://explore.MoneroWorld.com](http://explore.moneroworld.com) - same as the second one. 
+ - [https://moneroexplorer.pro/](https://moneroexplorer.pro/) - nice looking one, https enabled.
+ - [https://explorer.monero-otc.com/](https://explorer.monero-otc.com/) - https enabled.
+ - [http://monerochain.com/](http://monerochain.com/) - JSON API based, multiple nodes.   
+ - [http://atesti.mooo.com:8081/](http://atesti.mooo.com:8081/) - Proof of Existence built with Monero and IPFS. 
+-  [https://anunknownamount.com](https://anunknownamount.com/) - looks nice, https enabled.
+  
+Clearnet testnet Monero version:
+
+ - [http://nimis.serveo.net/](http://nimis.serveo.net/) - bleeding edge version. 
+ - [https://testnet.xmrchain.com/](https://testnet.xmrchain.com/) - https enabled.
+ - [https://explorer.monero-otc.com/](https://explorer.monero-otc.com/) - https enabled.
+ - [https://testnet.MoneroExplorer.com/](https://testnet.moneroexplorer.com/) - https enabled.
+
+i2p users (main Monero network):
+
+ - [http://7o4gezpkye6ekibhgpkg7v626ze4idsirapufzrefkdysa6zxhha.b32.i2p/](http://7o4gezpkye6ekibhgpkg7v626ze4idsirapufzrefkdysa6zxhha.b32.i2p/)
+
+Alternative block explorers:
+
+- [http://moneroblocks.info](http://moneroblocks.info/)
+- [https://monerobase.com](https://monerobase.com/)
+- [http://chainradar.com](http://chainradar.com/xmr/blocks)
+
+ 
