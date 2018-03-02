@@ -1432,7 +1432,7 @@ namespace xmreg
 
             if (xmr_address_str.empty())
             {
-                return string("ZvetaCoin address not provided!");
+                return string("Mynt address not provided!");
             }
 
             if (viewkey_str.empty())
@@ -1458,7 +1458,7 @@ namespace xmreg
             if (!xmreg::parse_str_address(xmr_address_str,  address, testnet))
             {
                 cerr << "Cannot parse string address: " << xmr_address_str << endl;
-                return string("Cannot parse ZvetaCoin address: " + xmr_address_str);
+                return string("Cannot parse Mynt address: " + xmr_address_str);
             }
 
             // parse string representing given private key
