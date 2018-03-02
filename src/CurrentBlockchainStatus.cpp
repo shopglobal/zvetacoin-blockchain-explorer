@@ -297,13 +297,13 @@ CurrentBlockchainStatus::is_thread_running()
    return is_running;
 }
 
-bf::path CurrentBlockchainStatus::blockchain_path {"~/.zvetacoin/lmdb"};
+bf::path CurrentBlockchainStatus::blockchain_path {"~/.mynt/lmdb"};
 
 bool   CurrentBlockchainStatus::testnet {false};
 
 string CurrentBlockchainStatus::output_file {"emission_amount.txt"};
 
-string CurrentBlockchainStatus::deamon_url {"http:://127.0.0.1:18191"};
+string CurrentBlockchainStatus::deamon_url {"http:://127.0.0.1:24091"};
 
 uint64_t  CurrentBlockchainStatus::blockchain_chunk_size {10000};
 
