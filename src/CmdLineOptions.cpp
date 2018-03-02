@@ -58,12 +58,12 @@ namespace xmreg
                 ("mempool-refresh-time", value<string>()->default_value("5"),
                  "time, in seconds, for each refresh of mempool state")
                 ("bc-path,b", value<string>(),
-                 "path to lmdb folder of the blockchain, e.g., ~/.bitmonero/lmdb")
+                 "path to lmdb folder of the blockchain, e.g., ~/.mynt/lmdb")
                 ("ssl-crt-file", value<string>(),
                  "path to crt file for ssl (https) functionality")
                 ("ssl-key-file", value<string>(),
                  "path to key file for ssl (https) functionality")
-                ("deamon-url,d", value<string>()->default_value("http:://127.0.0.1:18191"),
+                ("deamon-url,d", value<string>()->default_value("http:://127.0.0.1:24091"),
                  "Monero deamon url");
 
 
